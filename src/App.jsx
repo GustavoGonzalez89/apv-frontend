@@ -11,7 +11,7 @@ import ConfirmarCuenta from './paginas/ConfirmarCuenta';
 import RegistrarCuenta from './paginas/Registrar';
 import NuevoPassword from './paginas/NuevoPassword';
 
-import AdministrarPacientes from './paginas/AdministrarPacientes'
+import AdministrarPacientes from './paginas/administrarPacientes'
 import EditarPerfil from './paginas/EditarPerfil';
 import CambiarPassword from './paginas/CambiarPassword';
 
