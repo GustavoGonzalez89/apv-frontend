@@ -8,6 +8,7 @@ import usePacientes from "../hooks/usePacientes"
 
 const Formulario = () => {
     const [nombre, setNombre] = useState('')
+    const [fecha,setFecha] = useState('')
     const [propietario, setPropietario] = useState('')
     const [email, setEmail] = useState('')
     const [sintomas, setSintomas] = useState('')
@@ -16,10 +17,11 @@ const Formulario = () => {
     const { guardarPaciente, paciente } = usePacientes()
 
     //para saber cuando el objeto paciente tiene uno paciente cargado colocamos un useEffect, pasandole una dependencia va a estar observando los cambios en el mismo (State)
-    useEffect(() => {
+    useEffect(() => { 
         if(paciente?.nombre){
             setNombre(paciente.nombre)
             setPropietario(paciente.propietario)
+            setFecha(paciente.fecha_de_alta)
             setEmail(paciente.email)
             setSintomas(paciente.sintomas)
             setId(null)
