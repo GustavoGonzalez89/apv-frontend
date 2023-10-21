@@ -18,13 +18,12 @@ const Formulario = () => {
 
     //para saber cuando el objeto paciente tiene uno paciente cargado colocamos un useEffect, pasandole una dependencia va a estar observando los cambios en el mismo (State)
     useEffect(() => {
-        if(paciente?.nombre) {
+        if(paciente?.nombre){
             setNombre(paciente.nombre)
             setPropietario(paciente.propietario)
             setEmail(paciente.email)
-            setFecha(paciente.fecha)
             setSintomas(paciente.sintomas)
-            setId(paciente._id)
+            setId(null)
         }
     }, [paciente])
 
@@ -89,6 +88,7 @@ const Formulario = () => {
                     >Nombre Propietario</label>
                     <input
                         type="text"
+                        id="propietario"
                         placeholder="Nombre Propietario"
                         className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
                         value={propietario}
