@@ -89,8 +89,7 @@ const Formulario = () => {
                     >Nombre Propietario</label>
                     <input
                         type="text"
-                        id="propietario"
-                        placeholder="Nombre del Propietario"
+                        placeholder="Nombre Propietario"
                         className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
                         value={propietario}
                         onChange={e => setPropietario(e.target.value)} />
