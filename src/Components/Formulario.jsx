@@ -10,7 +10,6 @@ const Formulario = () => {
     const [nombre, setNombre] = useState('')
     const [propietario, setPropietario] = useState('')
     const [email, setEmail] = useState('')
-    const [fecha, setFecha] = useState('')
     const [sintomas, setSintomas] = useState('')
     const [id, setId] = useState(null)
 
